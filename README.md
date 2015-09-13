@@ -1,12 +1,6 @@
 # vi-mode
 Basic vi key bindings emulation for fish.
-
-## Install
-Add `vi-mode` to your list of fish plugins in your `config.fish`.
-
-Example:
-
-    set fish_plugins autojump vi-mode
+This plugin was updated to work on the new versions of oh-my-fish project.
 
 ## Configuration
 ### Default mode
