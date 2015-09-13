@@ -30,7 +30,7 @@ function vi_mode_normal
     bind x '__vi_mode_save_cmdline; commandline -f delete-char'
     bind D '__vi_mode_save_cmdline; commandline -f kill-line'
     # bind Y 'commandline -f kill-whole-line yank'
-    bind p '__vi_mode_save_cmdline; commandline -i (xsel -p; echo)'
+    bind p '__vi_mode_save_cmdline; commandline -i (xsel -b; echo)'
 #    bind P '__vi_mode_save_cmdline; commandline -i (xsel -p; echo) forward-char' # Yes, this is reversed. Otherwise it does the wrong thing. Go figure.
     bind C '__vi_mode_save_cmdline; commandline -f kill-line; vi_mode_insert'
     bind S '__vi_mode_save_cmdline; commandline -f kill-whole-line; vi_mode_insert'
