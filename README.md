@@ -53,10 +53,12 @@ Example:
 This mode has been created by [Ian Munsie][ian_github], the original file can
 be found [here][original].
 It has been adapted for oh-my-fish by [Sylvain Benner][syl_github].
+It has been updated for oh-my-fish by [Wanderson Ferreira][wan_github].
 
 [ian_github]: https://github.com/DarkStarSword
 [original]: https://github.com/DarkStarSword/junk/blob/master/vi-mode.fish
 [syl_github]: https://github.com/syl20bnr
+[wan_github]: https://github.com/WandersonCF
 
 
 
