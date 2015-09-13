@@ -1,8 +1,25 @@
-# vi-mode
-Basic vi key bindings emulation for fish.
-This plugin was updated to work on the new versions of oh-my-fish project.
+[![][travis-badge]][travis-link]
+![][license-badge]
 
-## Configuration
+<div align="center">
+  <a href="http://github.com/oh-my-fish/oh-my-fish">
+  <img width=90px  src="https://cloud.githubusercontent.com/assets/8317250/8510172/f006f0a4-230f-11e5-98b6-5c2e3c87088f.png">
+  </a>
+</div>
+<br>
+
+# vi-mode
+
+Plugin for [Oh My Fish][omf-link].
+
+## Install
+
+```fish
+$ omf install vi-mode
+```
+
+
+## Usage
 ### Default mode
 The default vi mode can be set by defining the variable `vi_mode_default` in
 your `config.fish`.
@@ -12,7 +29,7 @@ Its default value is `vi_mode_insert`.
 To set normal mode as default:
 
     set vi_mode_default vi_mode_normal
-
+    
 ### Mode indicator
 The mode indicator is stored in the variable `vi_mode`.
 
@@ -30,32 +47,16 @@ Example:
         bind \el  suppress-autosuggestion
     end
 
-## Not implemented
-- bind 2 vi-arg-digit
-- bind y yank-direction
-- bind g magic :-P
-- bind ^a increment next number
-- bind ^x decrement next number
-- bind /?nN search (jk kind of does this)
-- registers (maybe try to make sensible integration into X, like an
-  explicit yank with y goes to an X selection, while an implicit
-  delete with x etc. doesn't. "\* and "+ should natually go to the
-  appropriate X selection if possible)
-- etc.
+# License
 
-## Dependancy
-The paste function on the vi_mode_normal.fish function (bind p) wasn't working on my tests and to quickly solve the issue, xsel package was used to paste from clipboard. Still need some check on this regard. 
-
-## Author
-This mode has been created by [Ian Munsie][ian_github], the original file can
-be found [here][original].
-It has been adapted for oh-my-fish by [Sylvain Benner][syl_github].
-It has been updated for oh-my-fish by [Wanderson Ferreira][wan_github].
-
-[ian_github]: https://github.com/DarkStarSword
-[original]: https://github.com/DarkStarSword/junk/blob/master/vi-mode.fish
-[syl_github]: https://github.com/syl20bnr
-[wan_github]: https://github.com/WandersonCF
+[MIT][mit] © [Ian Munsie][author] et [al][contributors]
 
 
+[mit]:            http://opensource.org/licenses/MIT
+[author]:         http://github.com/DarkStarSword
+[contributors]:   https://github.com/oh-my-fish/plugin-vi-mode/graphs/contributors
+[omf-link]:       https://www.github.com/oh-my-fish/oh-my-fish
 
+[license-badge]:  https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square
+[travis-badge]:   http://img.shields.io/travis/{{USER}}/{{NAME}}.svg?style=flat-square
+[travis-link]:    https://travis-ci.org/{{USER}}/{{NAME}}
