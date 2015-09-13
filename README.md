@@ -43,6 +43,9 @@ Example:
   appropriate X selection if possible)
 - etc.
 
+## Dependancy
+The paste function on the vi_mode_normal.fish function (bind p) wasn't working on my tests and to quickly solve the issue, xsel package was used to paste from clipboard. Still need some check on this regard. 
+
 ## Author
 This mode has been created by [Ian Munsie][ian_github], the original file can
 be found [here][original].
