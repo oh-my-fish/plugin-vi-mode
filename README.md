@@ -1,3 +1,8 @@
+# DEPRECATED
+
+Note: Recent versions of fish come with [their own VI Mode](https://github.com/fish-shell/fish-shell/blob/master/doc_src/interactive.rst#vi-mode-commands) built in,
+which cna be enabled as described [in this SO answer](https://stackoverflow.com/questions/28444740/how-to-use-vi-mode-in-fish-shell).
+
 # vi-mode
 Basic vi key bindings emulation for fish.
 
